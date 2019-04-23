@@ -21,36 +21,23 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 public class SpringBootSslDemoApplicationTests {
 
-	@Autowired
-	SSLController sslController;
+    @Autowired
+    SSLController sslController;
 
-	@Autowired
-	MockMvc mockMvc;
+    @Autowired
+    MockMvc mockMvc;
 
-	/*static {
-		//for localhost testing only
-		javax.net.ssl.HttpsURLConnection.setDefaultHostnameVerifier(
-				new javax.net.ssl.HostnameVerifier(){
-					public boolean verify(String hostname, javax.net.ssl.SSLSession sslSession) {
-						if (hostname.equals("localhost")) {
-							return true;
-						}
-						return false;
-					}
-				});
-	}*/
+    @Test
+    public void contextLoads() {
+        assertThat(sslController).isNotNull();
+    }
 
-	@Test
-	public void contextLoads() {
-		assertThat(sslController).isNotNull();
-	}
-
-	@Test
-	public void sslGetMessage() throws Exception {
-		this.mockMvc.perform(get("/secured")).andDo(print())
-				.andExpect(status().isOk())
-				.andExpect(content().contentType("text/plain;charset=UTF-8"))
-				.andExpect(content().string(containsString("Welcome User")));
-	}
+    @Test
+    public void sslGetMessage() throws Exception {
+        this.mockMvc.perform(get("/secured")).andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(content().contentType("text/plain;charset=UTF-8"))
+                .andExpect(content().string(containsString("Welcome User")));
+    }
 
 }
