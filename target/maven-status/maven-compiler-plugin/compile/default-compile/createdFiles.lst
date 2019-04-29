@@ -1,4 +1,5 @@
 com\demo\SpringBootSSLDemo\Configurations\ConnectConfiguration$1.class
 com\demo\SpringBootSSLDemo\Controllers\SSLController.class
+com\demo\SpringBootSSLDemo\Filters\TransactionFilter.class
 com\demo\SpringBootSSLDemo\Configurations\ConnectConfiguration.class
 com\demo\SpringBootSSLDemo\SpringBootSslDemoApplication.class

@@ -1,6 +1,7 @@
 package com.demo.SpringBootSSLDemo;
 
 import com.demo.SpringBootSSLDemo.Controllers.SSLController;
+import com.demo.SpringBootSSLDemo.Filters.TransactionFilter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.ResultActions;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.hamcrest.Matchers.containsString;
@@ -18,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@AutoConfigureMockMvc
+@AutoConfigureMockMvc(addFilters = true)
 public class SpringBootSslDemoApplicationTests {
 
     @Autowired
@@ -38,6 +40,24 @@ public class SpringBootSslDemoApplicationTests {
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("text/plain;charset=UTF-8"))
                 .andExpect(content().string(containsString("Welcome User")));
+    }
+
+    @Test
+    public void checkResponseHeaderFromFilter() throws Exception {
+        assertThat(this.mockMvc.perform(get("/secured"))
+                .andReturn()
+                .getResponse()
+                .getHeader("X-Correlation-Id"))
+                .contains("abc123");
+    }
+
+    @Test
+    public void passRequestHeaderAndCheckResponseHeaderFromFilter() throws Exception {
+        assertThat(this.mockMvc.perform(get("/secured").header("X-Correlation-Id", "XYZ987"))
+                .andReturn()
+                .getResponse()
+                .getHeader("X-Correlation-Id"))
+                .contains("XYZ987");
     }
 
 }
