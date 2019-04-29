@@ -1,5 +1,6 @@
 package com.demo.SpringBootSSLDemo.Filters;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Component
+@Order(1)
 public class TransactionFilter implements Filter {
 
     @Override

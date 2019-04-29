@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe993e87-a795-45f8-baf3-80f925bf3ec6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Filters/ReqResLoggingFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Filters/TransactionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Filters/TransactionFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/demo/SpringBootSSLDemo/SpringBootSslDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demo/SpringBootSSLDemo/SpringBootSslDemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/SpringBootSSLDemo/Filters/TransactionFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/SpringBootSSLDemo/Filters/TransactionFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/demo/SpringBootSSLDemo/SpringBootSslDemoApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/demo/SpringBootSSLDemo/SpringBootSslDemoApplicationTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,37 +30,37 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="2" />
-          <entry key="java" value="3" />
+          <entry key="class" value="4" />
+          <entry key="java" value="6" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="3" />
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="6" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="796" />
+          <entry key="java" value="960" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="796" />
+          <entry key="JAVA" value="960" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/SpringBootSSLDemo/SpringBootSslDemoApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-154">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="-239">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding>
                 <element signature="e#1355#1356#0" expanded="true" />
                 <element signature="e#1408#1409#0" expanded="true" />
@@ -69,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Controllers/SSLController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -77,8 +81,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Filters/TransactionFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="21" column="79" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="79" />
+            <state relative-caret-position="209">
+              <caret line="16" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Filters/ReqResLoggingFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,6 +119,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Filters/TransactionFilter.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/demo/SpringBootSSLDemo/SpringBootSslDemoApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Beans/FilterRegistrationBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Filters/ReqResLoggingFilter.java" />
       </list>
     </option>
   </component>
@@ -170,7 +188,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SpringBootSSLDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Filters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringBootSSLDemo" type="b2602c69:ProjectViewProjectNode" />
@@ -217,7 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SpringBootSslDemoApplication">
+  <component name="RunManager" selected="JUnit.SpringBootSslDemoApplicationTests">
     <configuration name="SpringBootSslDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.demo.SpringBootSSLDemo.SpringBootSslDemoApplication" />
       <module name="SpringBootSSLDemo" />
@@ -353,12 +371,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpringBootSslDemoApplicationTests - 2019.04.24 at 01h 25m 19s.xml">
-      <configuration name="SpringBootSslDemoApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringBootSslDemoApplicationTests - 2019.04.24 at 11h 00m 30s.xml">
-      <configuration name="SpringBootSslDemoApplicationTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpringBootSslDemoApplicationTests_testFilter - 2019.04.29 at 20h 09m 10s.xml">
       <configuration name="SpringBootSslDemoApplicationTests.testFilter" configurationId="JUnit" />
     </history-entry>
@@ -383,9 +395,16 @@
     <history-entry file="SpringBootSslDemoApplicationTests - 2019.04.29 at 22h 47m 29s.xml">
       <configuration name="SpringBootSslDemoApplicationTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpringBootSslDemoApplicationTests - 2019.04.29 at 23h 04m 05s.xml">
+      <configuration name="SpringBootSslDemoApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootSslDemoApplicationTests - 2019.04.29 at 23h 17m 21s.xml">
+      <configuration name="SpringBootSslDemoApplicationTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18835099" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -394,15 +413,15 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33387887" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33387887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.1816694" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -438,14 +457,24 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Controllers/SSLController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Filters/TransactionFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="21" column="79" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="79" />
+        <state relative-caret-position="209">
+          <caret line="16" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Beans/FilterRegistrationBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -454,11 +483,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/demo/SpringBootSSLDemo/SpringBootSslDemoApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="-239">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="e#1355#1356#0" expanded="true" />
             <element signature="e#1408#1409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-875">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/SpringBootSSLDemo/Filters/ReqResLoggingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
